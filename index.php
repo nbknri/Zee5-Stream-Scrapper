@@ -37,7 +37,7 @@ $img = str_replace('270x152', '1170x658', $image);
 
  $vid = "https://zee5vodnd.akamaized.net".$vidt.$vtok;
 header("Content-Type: application/json");
-$errr= array("error" => "error provide proper input!" );
+$errr= array("error" => "Put Here Only ZEE5 Proper URL ,  Invalid Input " );
 $err =json_encode($errr);
 $apii = array("title" => $title, "description" => $des, "thumbnail" => $img, "video_url" => $vid, "subtitle_url" => $sub);
 $api =json_encode($apii);
