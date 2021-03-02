@@ -25,6 +25,5 @@
 
 <h2> Telegram Bot based on this </h2>
 <h4>
-Go to <a href="https://t.me/url_bejo_bot">ZEE5 Streaming Bot</a> OR search @url_bejo
-  -bot in telegram
+Go to <a href="https://t.me/url_bejo_bot">ZEE5 Streaming Bot</a> OR search @url_bejo_bot in telegram.
 </h4>
