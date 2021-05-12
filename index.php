@@ -1,4 +1,11 @@
+
+
 <?php
+
+// Don't Edit , any problems 
+// @Avishkatpatil [ TG ]
+// Star This Repo
+
 $url =$_GET['c'];
 if($url !=""){
 $id = end(explode('/', $url));
