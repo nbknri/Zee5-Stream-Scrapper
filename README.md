@@ -5,17 +5,28 @@
 <h2> How To Use : </h2>
 
 <h4>
-‣ Go on <a href="https://www.zee5.com/">ZEE5 Site </a> There You Can Go Any Where What you want Scrap and Click There <br><br>
-‣ Click On Episode / Movie / Shows Which You Want Scrap <br><br>
-‣ And Just Copy URL From URL Box <br><br>
-‣ e.g --> I Use This Link : https://www.zee5.com/movies/details/watch-uri-the-surgical-strike-full-movie-online/0-0-33204 <br><br>
-‣ After Copy Paste URL after this URL --> <code>https://z5avi.herokuapp.com/?c=</code> <br><br>
-‣ It Final URL is --> https://z5avi.herokuapp.com/?c=https://www.zee5.com/movies/details/watch-uri-the-surgical-strike-full-movie-online/0-0-33204 <br><br>
-‣ Run Final URL in Browser You Get Streaming URL <br>
+♢ Go on <a href="https://www.zee5.com/">ZEE5 Site </a> There You Can Go Any Where What you want Scrap and Click There <br><br>
+♢ Click On Episode / Movie / Shows Which You Want Scrap <br><br>
+♢ And Just Copy URL From URL Box <br><br>
+♢ e.g --> I Use This Link :<br><br>
+  
+```py
+  https://www.zee5.com/movies/details/watch-uri-the-surgical-strike-full-movie-online/0-0-33204
+```
+ 
+♢ After Copy Paste URL after this URL : <br><code>https://z5avi.herokuapp.com/?c=</code> 
+  <br><br>
+  
+♢ It Final URL is --> 
+  
+```py
+  https://z5avi.herokuapp.com/?c=https://www.zee5.com/movies/details/watch-uri-the-surgical-strike-full-movie-online/0-0-33204
+```
+♢ Run Final URL in Browser You Get Streaming URL <br>
 </h4>
 <br>
 
----
+
 
 <h2> Where To Host : </h2>
 
@@ -23,8 +34,5 @@
 <br>
   
 ---
+<h5 align='center'>© 2021 Aνιѕнкαя Pαтιℓ</h5>
 
-<h2> Telegram Bot based on this </h2>
-<h4>
-Go to <a href="https://telegram.me/zee5x_bot">ZEE5 Streaming Bot</a> OR search @zee5x_bot in telegram.
-</h4>
