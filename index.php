@@ -45,7 +45,7 @@ header("Content-Type: application/json");
 $errr= array("error" => "Put Here Only ZEE5 Proper URL ,  Invalid Input " );
 $err =json_encode($errr);
 $apii = array("title" => $title, "description" => $des, "thumbnail" => $img, "video_url" => $vid, "subtitle_url" => $sub, "created_by" => "Avishkar Patil");
-$api =json_encode($apii);
+$api =json_encode($apii, JSON_UNESCAPED_SLASHES);
 if($error ==101){
 echo $err;
 }
