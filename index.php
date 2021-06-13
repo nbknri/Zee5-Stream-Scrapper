@@ -1,5 +1,3 @@
-
-
 <?php
 
 // Don't Edit , any problems 
@@ -17,8 +15,8 @@ $vtoken =file_get_contents("http://useraction.zee5.com/tokennd/");
 $vtokn =json_decode($vtoken);
 $vtok =$vtokn->video_token;
 
-$xurl = curl_init();
-curl_setopt_array($xurl, array(
+$curl = curl_init();
+curl_setopt_array($curl, array(
   CURLOPT_URL => $tlink,
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
@@ -29,8 +27,8 @@ curl_setopt_array($xurl, array(
     "Content-Type: application/json"
   ),
 ));
-$response = curl_exec($xurl);
-curl_close($xurl);
+$response = curl_exec($curl);
+curl_close($curl);
 
 $hls =json_decode($response);
 $image =$hls->image_url;
@@ -46,24 +44,16 @@ $img = str_replace('270x152', '1170x658', $image);
 header("Content-Type: application/json");
 $errr= array("error" => "Put Here Only ZEE5 Proper URL ,  Invalid Input " );
 $err =json_encode($errr);
-$apii = array("title" => $title, "description" => $des, "thumbnail" => $img, "video_url" => $vid, "subtitle_url" => $sub);
+$apii = array("title" => $title, "description" => $des, "thumbnail" => $img, "video_url" => $vid, "subtitle_url" => $sub, "created_by" => "Avishkar Patil");
 $api =json_encode($apii);
 if($error ==101){
 echo $err;
 }
 else{
-  header("X-UA-Compatible: IE=edge");
-  header("Content-Type: application/json");
-
-echo "\n\nTitle : ${title}\n\n";
-echo "Description : ${des}\n\n\n";
-echo "Image URL : ${img}\n\n";
-echo "Video URL : ${vid}\n\n";
-echo "Subtitle URL : ${sub}\n\n\n\n\n\n\n\n";
-echo "✮ Created by Avishkar Patil\n\n";
-
+echo $api;
 }
 }
 else{
   echo "Hello There Is Problem In Your Link Or Check Your Link Format !!";
 }
+
